@@ -1,0 +1,103 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2020/03/14/Black-and-white-color-from-the-cityscape-Graphics-3645580-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 3em; /* Optional: Add padding to the wrapper if needed */
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque; /* Set the background color for the todo list */
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Protest Revolution', sans-serif;
+    color: rgb(187, 24, 24);
+    margin: 20px
+}
+
+p {
+    font-size: 75px;
+    margin: 30px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 3px solid;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(187, 24, 24);
+    color: white;
+}
+
+input {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 3px solid;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    font-size: large;
+    font-weight: 600;
+}
+
+
+#removeItems {
+    margin-bottom: 2em;
+}
+
+#addItem {
+    margin-left: auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    padding: 3em 2em 2em;
+    align-items: center;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+    font-size: 40px;
+    text-transform: capitalize;
+    width: 80%;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+li label:hover {
+    cursor: pointer;
+    color: rgb(187, 24, 24);
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(187, 24, 24);
+}
+
